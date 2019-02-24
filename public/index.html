@@ -8,22 +8,6 @@
   <link href="main.css" rel="stylesheet"></head>
   <body>
     <div id="app">
-      <header class="header">
-        <div class="container header-wrapper"><a class="header-logo" href="#"><img class="header-logo__img" src="images/logo.svg" alt="Ekonombud"></a>
-          <nav class="header-nav">
-            <ul class="header-nav-list">
-              <li><a href="#">Оборудование</a></li>
-              <li><a href="#">Преимущества</a></li>
-              <li><a href="#">Вопрос-ответ</a></li>
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav><a class="header-contact" href="tel:+380661425235">
-                <svg class="header-contact__phoneIcon">
-                  <use xlink:href="sprite.svg#phone"></use>
-                </svg><span class="header-contact__text light">+380 </span><span class="header-contact__text blue">66 </span><span class="header-contact__text black">142 52 35</span></a>
-        </div>
-      </header>
       <main class="main">
         <section class="hero" style="background-image: url('images/hero-bg.jpg')">
           <div class="container hero-container">
@@ -215,7 +199,7 @@
                 </ul>
               </div>
               <div class="advantages-part-two">
-                    <div class="div informer grey advantages__informer"><span class="informer__text grey">Шланг с подогревом длинной 30 метров</span></div>
+                    <div class="informer grey advantages__informer"><span class="informer__text grey">Шланг с подогревом длинной 30 метров</span></div>
               </div>
             </div>
           </div>
@@ -264,6 +248,7 @@
                       <svg class="webinar-wrapper-img__icon">
                         <use xlink:href="sprite.svg#play"></use>
                       </svg>
+                      <div class="informer yellow webinar-wrapper-img__informer"><span class="informer__text yellow">Вас будет перенаправлено в Messenger</span></div>
                 </div>
                 <div class="webinar-wrapper-content">
                   <p class="webinar-wrapper-content__title">Установки Ekonombud — инвестиции с рекордной окупаемостью</p>
@@ -280,7 +265,6 @@
                             </svg></span></a></div>
                 </div>
               </div>
-                  <div class="div informer yellow webinar-wrapper-img__informer"><span class="informer__text yellow">Вас будет перенаправлено в Messenger</span></div>
             </div>
           </div>
         </section>
@@ -695,8 +679,21 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="container">
+        <div class="container container-flex">
           <div class="footer-map" id="init-goolge-map-js"></div>
+          <div class="footer-contact">
+            <div class="footer-contact-adress">
+                  <svg class="footer-contact-adress__icon">
+                    <use xlink:href="sprite.svg#pointer"></use>
+                  </svg>
+              <p class="footer-contact__text">Киев, улица Евгения Маланюка 100а</p>
+            </div>
+            <div class="footer-contact-phone">
+                  <svg class="footer-contact-phone__icon">
+                    <use xlink:href="sprite.svg#phone"></use>
+                  </svg><a class="footer-contact__text" href="tel:+380661425235">+380 <span class="yellow">66 </span>142 52 35</a>
+            </div>
+          </div>
           <div class="footer-content">
             <h2 class="container__title footer__title">Дарим <span class="container__title-bold yellow">-20% скидки </span>за то, что Вы долистали сюда</h2>
             <form class="footer-form">
