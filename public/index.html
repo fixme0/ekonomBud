@@ -12,11 +12,11 @@
         <div class="container header-wrapper"><a class="header-logo" href="#"><img class="header-logo__img" src="images/logo.svg" alt="Ekonombud"></a>
           <nav class="header-nav">
             <ul class="header-nav-list">
-              <li><a href="#">Оборудование</a></li>
-              <li><a href="#">Преимущества</a></li>
-              <li><a href="#">Вопрос-ответ</a></li>
-              <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#" data-scroll-selector="#products">Оборудование</a></li>
+              <li><a href="#" data-scroll-selector="#advantages">Преимущества</a></li>
+              <li><a href="#" data-scroll-selector="#faq">Вопрос-ответ</a></li>
+              <li><a href="#" data-scroll-selector="#clients">Отзывы</a></li>
+              <li><a href="#" data-scroll-selector="#contact">Контакты</a></li>
             </ul>
           </nav><a class="header-contact" href="tel:+380661425235">
                 <svg class="header-contact__phoneIcon">
@@ -29,7 +29,7 @@
           <div class="container hero-container">
             <div class="hero-main">
               <div class="hero-main-aside">
-                <div class="hero-main-aside-part grow-1"><a class="arrow-btn hero-main-aside-part__btn" href="#"><span class="arrow-btn__text">листайте вниз</span>
+                <div class="hero-main-aside-part grow-1"><a class="arrow-btn hero-main-aside-part__btn" href="#" data-scroll-selector="#products"><span class="arrow-btn__text">листайте вниз</span>
                             <svg class="arrow-btn__icon">
                               <use xlink:href="sprite.svg#arrow"></use>
                             </svg></a>
@@ -75,7 +75,7 @@
             </div>
           </div>
         </section>
-        <section class="products">
+        <section class="products" id="products">
           <div class="container container-flex">
             <div class="container-aside"><span class="container-aside__title">Каталог</span></div>
             <div class="products-main">
@@ -181,7 +181,7 @@
             </div>
           </div>
         </section>
-        <section class="advantages">
+        <section class="advantages" id="advantages">
           <div class="container container-flex">
             <div class="container-aside"><span class="container-aside__title">Преимущества</span></div>
             <div class="advantages-main">
@@ -260,10 +260,12 @@
                 <div class="webinar-wrapper-img">
                   <div class="webinar-wrapper-img-row">
                     <p class="webinar-wrapper-img-row__text">Вебинар</p><span class="tag webinar-wrapper-img-row__tag bg-yellow">Бесплатно</span>
-                  </div><img class="webinar-wrapper-img__picture" src="images/tip.jpg" alt="img">
-                      <svg class="webinar-wrapper-img__icon">
-                        <use xlink:href="sprite.svg#play"></use>
-                      </svg>
+                  </div>
+                  <div class="webinar-wrapper-img-wrapper"><img class="webinar-wrapper-img__picture" src="images/tip.jpg" alt="img">
+                        <svg class="webinar-wrapper-img__icon">
+                          <use xlink:href="sprite.svg#play"></use>
+                        </svg>
+                  </div>
                       <div class="informer yellow webinar-wrapper-img__informer"><span class="informer__text yellow">Вас будет перенаправлено в Messenger</span></div>
                 </div>
                 <div class="webinar-wrapper-content">
@@ -446,7 +448,7 @@
     </div>
   </div>
 </section>
-        <section class="faq">
+        <section class="faq" id="faq">
           <div class="container container-flex">
             <div class="container-aside"><span class="container-aside__title">f.a.q</span></div>
             <div class="faq-main">
@@ -628,7 +630,7 @@
             </div>
           </div>
         </section>
-        <section class="clients">
+        <section class="clients" id="clients">
           <div class="container container-flex">
             <div class="container-aside"><span class="container-aside__title">Наши клиенты</span></div>
             <div class="clients-main">
@@ -694,7 +696,7 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="contact">
         <div class="container container-flex">
           <div class="footer-map" id="init-goolge-map-js"></div>
           <div class="footer-contact">
