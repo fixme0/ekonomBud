@@ -9,14 +9,45 @@
   <body>
     <div id="app">
       <header class="header">
-        <div class="container header-wrapper"><a class="header-logo" href="#"><img class="header-logo__img" src="images/logo.svg" alt="Ekonombud"></a>
+        <div class="container header-wrapper"><a class="header-logo" href="#"><img class="header-logo__img" src="images/logo.svg" alt="Ekonombud"></a><a class="header-nav-button" href="#"><span class="header-nav-button__text">меню</span>
+                <svg class="header-nav-button__icon">
+                  <use xlink:href="sprite.svg#menu-button"></use>
+                </svg></a>
           <nav class="header-nav">
             <ul class="header-nav-list">
-              <li><a href="#" data-scroll-selector="#products">Оборудование</a></li>
-              <li><a href="#" data-scroll-selector="#advantages">Преимущества</a></li>
-              <li><a href="#" data-scroll-selector="#faq">Вопрос-ответ</a></li>
-              <li><a href="#" data-scroll-selector="#clients">Отзывы</a></li>
-              <li><a href="#" data-scroll-selector="#contact">Контакты</a></li>
+              <li><a href="#" data-scroll-selector="#products">Оборудование
+                      <svg class="header-nav-list__icon">
+                        <use xlink:href="sprite.svg#arrow"></use>
+                      </svg></a></li>
+              <li><a href="#" data-scroll-selector="#advantages">Преимущества
+                      <svg class="header-nav-list__icon">
+                        <use xlink:href="sprite.svg#arrow"></use>
+                      </svg></a></li>
+              <li><a href="#" data-scroll-selector="#faq">Вопрос-ответ
+                      <svg class="header-nav-list__icon">
+                        <use xlink:href="sprite.svg#arrow"></use>
+                      </svg></a></li>
+              <li><a href="#" data-scroll-selector="#clients">Отзывы
+                      <svg class="header-nav-list__icon">
+                        <use xlink:href="sprite.svg#arrow"></use>
+                      </svg></a></li>
+              <li><a href="#" data-scroll-selector="#contact">Контакты
+                      <svg class="header-nav-list__icon">
+                        <use xlink:href="sprite.svg#arrow"></use>
+                      </svg></a></li>
+            </ul>
+            <ul class="header-nav-contact">
+              <li class="header-nav-contact-item">
+                    <svg class="header-nav-contact-item__icon header-nav-contact-item__icon--pointer">
+                      <use xlink:href="sprite.svg#pointer"></use>
+                    </svg>
+                <p class="header-nav-contact-item__text">Киев, ул. Е. Маланюка <span class="yellow">100а</span></p>
+              </li>
+              <li class="header-nav-contact-item"><a class="header-nav-contact-item__link" href="tel:+380661425235">
+                      <svg class="header-nav-contact-item__icon header-nav-contact-item__icon--phone">
+                        <use xlink:href="sprite.svg#phone"></use>
+                      </svg>
+                  <p class="header-nav-contact-item__text">+380 <span class="yellow">66 </span>142 52 35</p></a></li>
             </ul>
           </nav><a class="header-contact" href="tel:+380661425235">
                 <svg class="header-contact__phoneIcon">
@@ -52,25 +83,31 @@
                 </div>
               </div>
               <div class="hero-main-content">
-                <p class="hero-main-content__title">Современные <span class="yellow">технологии </span>тепло- и гидроизоляции</p>
-                <p class="hero-main-content__descr">Откройте свой прибыльный бизнес <span class="yellow">с заработком от $3000 </span>в двух самых востребованных строительных сферах по снижению затрат на отопление и качественной гидроизоляции</p>
-                    <div class="my__btn ">
-                      <button class="hero-main-content__btn" type="button">Узнать подробности</button>
-                    </div>
+                <div class="align-center">
+                  <p class="hero-main-content__title">Современные <span class="yellow">технологии </span>тепло- и гидроизоляции</p>
+                  <p class="hero-main-content__descr">Откройте свой прибыльный бизнес <span class="yellow">с заработком от $3000 </span>в двух самых востребованных строительных сферах по снижению затрат на отопление и качественной гидроизоляции</p>
+                      <div class="my__btn ">
+                        <button class="hero-main-content__btn" type="button">Узнать подробности</button>
+                      </div>
+                </div>
                 <ul class="hero-main-content-list">
                   <li class="hero-main-content-list-item">
                     <p class="hero-main-content-list-item__number">01</p>
-                    <p class="hero-main-content-list-item__text">Собственное<br>производство </p>
+                    <p class="hero-main-content-list-item__text">Собственное <br>производство </p>
                   </li>
                   <li class="hero-main-content-list-item">
                     <p class="hero-main-content-list-item__number">02</p>
-                    <p class="hero-main-content-list-item__text">Обучение<br>технологии </p>
+                    <p class="hero-main-content-list-item__text">Обучение <br>технологии </p>
                   </li>
                   <li class="hero-main-content-list-item">
                     <p class="hero-main-content-list-item__number">03</p>
-                    <p class="hero-main-content-list-item__text">Гарантия<br>12 месяцев</p>
+                    <p class="hero-main-content-list-item__text">Гарантия <br>12 месяцев</p>
                   </li>
                 </ul>
+              </div>
+              <div class="hero-main-picture">
+                    <div class="informer yellow hero-main-picture-informer"><span class="informer__text yellow">Апарат высокого давления для ППУ и ПМ <b class="yellow">S9000</b></span></div><img class="hero-main-picture__img" src="images/bitmap.png" alt="img">
+                <div class="hero-main-picture__blur"></div>
               </div>
             </div>
           </div>
@@ -80,7 +117,7 @@
             <div class="container-aside"><span class="container-aside__title">Каталог</span></div>
             <div class="products-main">
               <div class="products-row">
-                <h2 class="container__title products__title">Мы предлагаем оборудование, которое поможет<span class="container__title-bold">начать зарабатывать </span>уже сейчас</h2>
+                <h2 class="container__title products__title">Мы предлагаем оборудование, которое поможет <span class="container__title-bold">начать зарабатывать </span>уже сейчас</h2>
                 <div class="products-nav">
 <ul class="pagination"></ul><a class="arrow-btn products-nav__btn" href="#"><span class="arrow-btn__text">Листайте дальше</span>
                             <svg class="arrow-btn__icon">
@@ -173,9 +210,25 @@
                   </div>
                 </div>
               </div>
+                  <div class="pagination-with-btn products-mobile-pag">
+                    <button class="pagination-with-btn-arrow pagination-with-btn-arrow--left" type="button">
+                          <svg class="pagination-with-btn-arrow__icon">
+                            <use xlink:href="sprite.svg#arrow"></use>
+                          </svg>
+                    </button>
+                    <ul class="pagination"></ul>
+                    <button class="pagination-with-btn-arrow pagination-with-btn-arrow--right" type="button">
+                          <svg class="pagination-with-btn-arrow__icon">
+                            <use xlink:href="sprite.svg#arrow"></use>
+                          </svg>
+                    </button>
+                  </div>
               <div class="products-navigation">
-                    <div class="my__btn ">
+                    <div class="my__btn btn--big">
                       <button type="button">заказать бесплатную консультацию</button>
+                    </div>
+                    <div class="my__btn btn--sm">
+                      <button type="button">заказать консультацию</button>
                     </div><a class="products-navigation__link" href="#">скачать полный каталог</a>
               </div>
             </div>
@@ -225,29 +278,44 @@
             <div class="container-aside"><span class="container-aside__title">Когда нужна</span></div>
             <div class="need-main">
               <h2 class="container__title need__title"><span class="container__title-bold">В каких случаях </span>установки Ekonombud — лучшее решение?</h2>
-              <ul class="need-list">
-                <li class="need-list-item">
-                      <svg class="need-list-item__icon">
-                        <use xlink:href="sprite.svg#timer"></use>
-                      </svg>
-                  <p class="need-list-item__title">Вы выполняете <br> регулярные работы</p>
-                  <p class="need-list-item__text">Вам необходимо регулярно тепло и гидроизолировать объекты (при строительстве домов, промышленных обьектов на заводах и т.д.)</p>
-                </li>
-                <li class="need-list-item">
-                      <svg class="need-list-item__icon">
-                        <use xlink:href="sprite.svg#cube"></use>
-                      </svg>
-                  <p class="need-list-item__title">У вас большая <br> площадь объекта</p>
-                  <p class="need-list-item__text">У Вас большая площадь объекта и Вы хотите <span class='need-list-item__text--bold'>сэкономить приблизительно до 20%</span> суммы на услугах тепло- и гидроизоляции под ключ</p>
-                </li>
-                <li class="need-list-item">
-                      <svg class="need-list-item__icon">
-                        <use xlink:href="sprite.svg#hand"></use>
-                      </svg>
-                  <p class="need-list-item__title">Вы собираетесь <br> зарабатывать деньги</p>
-                  <p class="need-list-item__text">Вы планируете освоить технологию тепло- и гидроизоляции на своем объекте и <span class='need-list-item__text--bold'>начать зарабатывать, оказывая услуги другим</span></p>
-                </li>
-              </ul>
+              <div class="swiper-container need-slider">
+                <ul class="need-list swiper-wrapper">
+                  <li class="need-list-item swiper-slide">
+                        <svg class="need-list-item__icon">
+                          <use xlink:href="sprite.svg#timer"></use>
+                        </svg>
+                    <p class="need-list-item__title">Вы выполняете <br> регулярные работы</p>
+                    <p class="need-list-item__text">Вам необходимо регулярно тепло и гидроизолировать объекты (при строительстве домов, промышленных обьектов на заводах и т.д.)</p>
+                  </li>
+                  <li class="need-list-item swiper-slide">
+                        <svg class="need-list-item__icon">
+                          <use xlink:href="sprite.svg#cube"></use>
+                        </svg>
+                    <p class="need-list-item__title">У вас большая <br> площадь объекта</p>
+                    <p class="need-list-item__text">У Вас большая площадь объекта и Вы хотите <span class='need-list-item__text--bold'>сэкономить приблизительно до 20%</span> суммы на услугах тепло- и гидроизоляции под ключ</p>
+                  </li>
+                  <li class="need-list-item swiper-slide">
+                        <svg class="need-list-item__icon">
+                          <use xlink:href="sprite.svg#hand"></use>
+                        </svg>
+                    <p class="need-list-item__title">Вы собираетесь <br> зарабатывать деньги</p>
+                    <p class="need-list-item__text">Вы планируете освоить технологию тепло- и гидроизоляции на своем объекте и <span class='need-list-item__text--bold'>начать зарабатывать, оказывая услуги другим</span></p>
+                  </li>
+                </ul>
+              </div>
+                  <div class="pagination-with-btn need-pagination">
+                    <button class="pagination-with-btn-arrow pagination-with-btn-arrow--left" type="button">
+                          <svg class="pagination-with-btn-arrow__icon">
+                            <use xlink:href="sprite.svg#arrow"></use>
+                          </svg>
+                    </button>
+                    <ul class="pagination"></ul>
+                    <button class="pagination-with-btn-arrow pagination-with-btn-arrow--right" type="button">
+                          <svg class="pagination-with-btn-arrow__icon">
+                            <use xlink:href="sprite.svg#arrow"></use>
+                          </svg>
+                    </button>
+                  </div>
             </div>
           </div>
         </section>
@@ -272,12 +340,12 @@
                   <p class="webinar-wrapper-content__title">Установки Ekonombud — инвестиции с рекордной окупаемостью</p>
                   <p class="webinar-wrapper-content__text">Даже при выборе самой дорогой модели вложенные средства <span class="webinar-wrapper-content__text--bold">окупятся уже через 2 месяца, </span>после напыления в обьеме около 2500 м2.</p>
                   <div class="my__btn webinar-wrapper-content-btn">
-                    <button type="button" data-open-modal="#modal-contact-form"> <span class="webinar-wrapper-content-btn__text">получить видео на эл. почту</span><span class="webinar-wrapper-content-btn__circle">
+                    <button type="button" data-open-modal="#modal-contact-form"> <span class="webinar-wrapper-content-btn__text">получить видео на эл. почту</span><span class="webinar-wrapper-content-btn__text webinar-wrapper-content-btn__text--sm">получить на эл. почту</span><span class="webinar-wrapper-content-btn__circle">
                             <svg class="webinar-wrapper-content-btn__icon">
                               <use xlink:href="sprite.svg#envelope"></use>
                             </svg></span></button>
                   </div>
-                  <div class="my__btn webinar-wrapper-content-btn webinar-wrapper-content-btn--link"><a href="#"> <span class="webinar-wrapper-content-btn__text">смотреть видео в messenger</span><span class="webinar-wrapper-content-btn__circle">
+                  <div class="my__btn webinar-wrapper-content-btn webinar-wrapper-content-btn--link"><a href="#"> <span class="webinar-wrapper-content-btn__text">смотреть видео в messenger</span><span class="webinar-wrapper-content-btn__text webinar-wrapper-content-btn__text--sm">смотреть в messenger</span><span class="webinar-wrapper-content-btn__circle">
                             <svg class="webinar-wrapper-content-btn__icon">
                               <use xlink:href="sprite.svg#messenger"></use>
                             </svg></span></a></div>
@@ -358,7 +426,7 @@
             <div class="instruction-main"><img class="instruction__img" src="images/book.png" alt="book">
               <div class="instruction-content"><span class="tag instruction__tag bg-yellow">Бесплатно</span>
                 <h2 class="container__title instruction__title">Как выбрать <span class="container__title-bold">оптимальную установку </span>под ваши задачи?</h2>
-                <p class="instruction__text">В обмен на почту и номер телефона наш <span class="instruction__text--bold">менеджер свяжется с Вами для уточнения информации </span>и мы вышлем Вам каталог с оптимальной установкой под ваши задачи</p>
+                <p class="instruction__text">В обмен на почту и номер телефона наш <span class="instruction__text--bold">менеджер свяжется с Вами для уточнения информации </span>и мы вышлем Вам каталог с оптимальной установкой под ваши задачи</p><img class="instruction-content__img" src="images/book.png" alt="book">
                 <form class="instruction-form">
                       <div class="input instruction-form__field light">
                         <label class="input__label">Ваш номер</label>
@@ -393,61 +461,126 @@
                       <div class="my__btn instruction-form__btn">
                         <input type="submit" value="Получить материалы на почту">
                       </div>
+                      <div class="my__btn instruction-form__btn instruction-form__btn--sm">
+                        <input type="submit" value="Получить материалы">
+                      </div>
                 </form>
               </div>
             </div>
           </div>
         </section>
-<section class="material">
-  <div class="container container-flex">
-    <div class="container-aside"><span class="container-aside__title">Материалы</span></div>
-    <div class="material-main">
-      <h2 class="container__title material__title">В каких сферах <span class="container__title-bold">пенополиуретан </span>и <span class="container__title-bold">полимочевина </span>являются лучшим материалом?</h2>
-      <div class="material-main-wrapper">
-        <ul class="material-nav">
-          <li class="material-nav-item active">
-            <button class="material-nav-item__btn" type="submit" data-tab="0">Пенополиуретан</button>
-          </li>
-          <li class="material-nav-item">
-            <button class="material-nav-item__btn" type="submit" data-tab="1">Полимочевина</button>
-          </li>
-        </ul>
-        <ul class="material-list active" data-tab-index="0">
-          <li class="material-list-item">
-            <p class="material-list-item__number">01</p>
-            <p class="material-list-item__title">Бесшовность</p>
-            <p class="material-list-item__text">Ровно ложится на всю площадь поверхности без стыков и щелей</p>
-          </li>
-          <li class="material-list-item">
-            <p class="material-list-item__number">02</p>
-            <p class="material-list-item__title">Пожаробезопасность</p>
-            <p class="material-list-item__text">Пенополиуретан пжаробезопасен и не способствует горению</p>
-          </li>
-          <li class="material-list-item">
-            <p class="material-list-item__number">03</p>
-            <p class="material-list-item__title">Высокая сцепляемость</p>
-            <p class="material-list-item__text">Адгезия на 100% с любой возможной поверхностью</p>
-          </li>
-          <li class="material-list-item">
-            <p class="material-list-item__number">04</p>
-            <p class="material-list-item__title">Монолитная структура</p>
-            <p class="material-list-item__text">Монолитная структура с годами только укрепляется и становится мощнее</p>
-          </li>
-          <li class="material-list-item">
-            <p class="material-list-item__number">05</p>
-            <p class="material-list-item__title">Экологичность</p>
-            <p class="material-list-item__text">Пенополиуретан нетоксичен, используется в водохранилищах питьевой воды и в медицинской промышленности</p>
-          </li>
-          <li class="material-list-item">
-            <p class="material-list-item__number">06</p>
-            <p class="material-list-item__title">Низкая теплопроводимость</p>
-            <p class="material-list-item__text">Низкая теплопроводимость защищает от перепадов температур в помещении, обеспечивая стабильный микрокли</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+        <section class="material">
+          <div class="container container-flex">
+            <div class="container-aside"><span class="container-aside__title">Материалы</span></div>
+            <div class="material-main">
+              <h2 class="container__title material__title">В каких сферах <span class="container__title-bold">пенополиуретан </span>и <span class="container__title-bold">полимочевина </span>являются лучшим материалом?</h2>
+              <div class="material-main-wrapper">
+                <ul class="material-nav">
+                  <li class="material-nav-item active">
+                    <button class="material-nav-item__btn" type="submit" data-tab="0">Пенополиуретан</button>
+                  </li>
+                  <li class="material-nav-item">
+                    <button class="material-nav-item__btn" type="submit" data-tab="1">Полимочевина</button>
+                  </li>
+                </ul>
+                <div class="swiper-container material-slider">
+                  <ul class="material-list active swiper-wrapper" data-tab-index="0">
+                    <li class="material-list-item swiper-slide">
+                      <p class="material-list-item__number">01</p>
+                      <p class="material-list-item__title">Бесшовность</p>
+                      <p class="material-list-item__text">Ровно ложится на всю площадь поверхности без стыков и щелей</p>
+                    </li>
+                    <li class="material-list-item swiper-slide">
+                      <p class="material-list-item__number">02</p>
+                      <p class="material-list-item__title">Пожаробезопасность</p>
+                      <p class="material-list-item__text">Пенополиуретан пжаробезопасен и не способствует горению</p>
+                    </li>
+                    <li class="material-list-item swiper-slide">
+                      <p class="material-list-item__number">03</p>
+                      <p class="material-list-item__title">Высокая сцепляемость</p>
+                      <p class="material-list-item__text">Адгезия на 100% с любой возможной поверхностью</p>
+                    </li>
+                    <li class="material-list-item swiper-slide">
+                      <p class="material-list-item__number">04</p>
+                      <p class="material-list-item__title">Монолитная структура</p>
+                      <p class="material-list-item__text">Монолитная структура с годами только укрепляется и становится мощнее</p>
+                    </li>
+                    <li class="material-list-item swiper-slide">
+                      <p class="material-list-item__number">05</p>
+                      <p class="material-list-item__title">Экологичность</p>
+                      <p class="material-list-item__text">Пенополиуретан нетоксичен, используется в водохранилищах питьевой воды и в медицинской промышленности</p>
+                    </li>
+                    <li class="material-list-item swiper-slide">
+                      <p class="material-list-item__number">06</p>
+                      <p class="material-list-item__title">Низкая теплопроводимость</p>
+                      <p class="material-list-item__text">Низкая теплопроводимость защищает от перепадов температур в помещении, обеспечивая стабильный микрокли</p>
+                    </li>
+                  </ul>
+                      <div class="pagination-with-btn material-pagination">
+                        <button class="pagination-with-btn-arrow pagination-with-btn-arrow--left" type="button">
+                              <svg class="pagination-with-btn-arrow__icon">
+                                <use xlink:href="sprite.svg#arrow"></use>
+                              </svg>
+                        </button>
+                        <ul class="pagination"></ul>
+                        <button class="pagination-with-btn-arrow pagination-with-btn-arrow--right" type="button">
+                              <svg class="pagination-with-btn-arrow__icon">
+                                <use xlink:href="sprite.svg#arrow"></use>
+                              </svg>
+                        </button>
+                      </div>
+                </div>
+                <div class="swiper-container material-slider">
+                  <ul class="material-list swiper-wrapper" data-tab-index="1">
+                    <li class="material-list-item swiper-slide">
+                      <p class="material-list-item__number">01</p>
+                      <p class="material-list-item__title">Бесшовность</p>
+                      <p class="material-list-item__text">Ровно ложится на всю площадь поверхности без стыков и щелей</p>
+                    </li>
+                    <li class="material-list-item swiper-slide">
+                      <p class="material-list-item__number">02</p>
+                      <p class="material-list-item__title">Пожаробезопасность</p>
+                      <p class="material-list-item__text">Пенополиуретан пжаробезопасен и не способствует горению</p>
+                    </li>
+                    <li class="material-list-item swiper-slide">
+                      <p class="material-list-item__number">03</p>
+                      <p class="material-list-item__title">Высокая сцепляемость</p>
+                      <p class="material-list-item__text">Адгезия на 100% с любой возможной поверхностью</p>
+                    </li>
+                    <li class="material-list-item swiper-slide">
+                      <p class="material-list-item__number">04</p>
+                      <p class="material-list-item__title">Монолитная структура</p>
+                      <p class="material-list-item__text">Монолитная структура с годами только укрепляется и становится мощнее</p>
+                    </li>
+                    <li class="material-list-item swiper-slide">
+                      <p class="material-list-item__number">05</p>
+                      <p class="material-list-item__title">Экологичность</p>
+                      <p class="material-list-item__text">Пенополиуретан нетоксичен, используется в водохранилищах питьевой воды и в медицинской промышленности</p>
+                    </li>
+                    <li class="material-list-item swiper-slide">
+                      <p class="material-list-item__number">06</p>
+                      <p class="material-list-item__title">Низкая теплопроводимость</p>
+                      <p class="material-list-item__text">Низкая теплопроводимость защищает от перепадов температур в помещении, обеспечивая стабильный микрокли</p>
+                    </li>
+                  </ul>
+                      <div class="pagination-with-btn material-pagination">
+                        <button class="pagination-with-btn-arrow pagination-with-btn-arrow--left" type="button">
+                              <svg class="pagination-with-btn-arrow__icon">
+                                <use xlink:href="sprite.svg#arrow"></use>
+                              </svg>
+                        </button>
+                        <ul class="pagination"></ul>
+                        <button class="pagination-with-btn-arrow pagination-with-btn-arrow--right" type="button">
+                              <svg class="pagination-with-btn-arrow__icon">
+                                <use xlink:href="sprite.svg#arrow"></use>
+                              </svg>
+                        </button>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="sert">
           <div class="container container-flex">
             <div class="container-aside"><span class="container-aside__title">Сертификаты</span></div>
@@ -456,6 +589,18 @@
                 <h2 class="container__title sert__title">Все материалы <span class="container__title-bold yellow">сертифицированны</span></h2>
                 <div class="sert-main-partOne__text">Сертификаты есть на все, паспорта на оборудование тоже. Экспертные оценки материал прошёл, проводили испытания на огнеупорность. Получен сертификат Г1, который позволяет заходить на любые строительные объекты любого уровня.</div>
                 <div class="my__btn sert-main-partOne__btn"><a href="#">Все сертификаты</a></div>
+              </div>
+              <div class="sert-main-partTwo">
+                <div class="sert-slider swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide sert-slider-item"></div>
+                    <div class="swiper-slide sert-slider-item"></div>
+                    <div class="swiper-slide sert-slider-item"></div>
+                    <div class="swiper-slide sert-slider-item"></div>
+                  </div>
+                </div>
+                <ul class="pagination sert-slider-pagination"></ul>
+                <div class="my__btn sert-main-partOne__btn sert-main-partOne__btn--sm"><a href="#">Все сертификаты</a></div>
               </div>
             </div>
           </div>
@@ -638,6 +783,9 @@
                     <div class="my__btn connect-form__btn">
                       <input type="submit" value="Отправить сообщение менеджеру">
                     </div>
+                    <div class="my__btn connect-form__btn connect-form__btn--sm">
+                      <input type="submit" value="Отправить сообщение">
+                    </div>
               </form>
             </div>
           </div>
@@ -686,24 +834,21 @@
                       <p class="clients-slider-list-item-footer__text"><span class="clients-slider-list-item-footer__text--bold">Джеймс Куинси, </span>Директор по маркетингу</p>
                     </div>
                   </li>
-                  <li class="clients-slider-list-item swiper-slide">
-                    <p class="clients-slider-list-item__title">Нам все очень нравится!</p>
-                    <p class="clients-slider-list-item__text">Привет! Нам все очень нравится. Любим зарабатывать деньги вместе с Экономбудом. Экологически чистый материал, долгосрочный и сохраняющий тепло.</p>
-                    <p class="clients-slider-list-item__text">Удобно пользоваться оборудованием, особенно после такого подробного обучения.</p>
-                    <div class="clients-slider-list-item-footer">
-                      <p class="clients-slider-list-item-footer__text"><span class="clients-slider-list-item-footer__text--bold">Джеймс Куинси, </span>Директор по маркетингу</p>
-                    </div>
-                  </li>
-                  <li class="clients-slider-list-item swiper-slide">
-                    <p class="clients-slider-list-item__title">Нам все очень-очень нравится!</p>
-                    <p class="clients-slider-list-item__text">Привет! Нам все очень нравится. Любим зарабатывать деньги вместе с Экономбудом. Экологически чистый материал, долгосрочный и сохраняющий тепло.</p>
-                    <p class="clients-slider-list-item__text">Удобно пользоваться оборудованием, особенно после такого подробного обучения.</p>
-                    <div class="clients-slider-list-item-footer">
-                      <p class="clients-slider-list-item-footer__text"><span class="clients-slider-list-item-footer__text--bold">Джеймс Куинси, </span>Директор по маркетингу</p>
-                    </div>
-                  </li>
                 </ul>
               </div>
+                  <div class="pagination-with-btn clients-slider-pagination">
+                    <button class="pagination-with-btn-arrow pagination-with-btn-arrow--left" type="button">
+                          <svg class="pagination-with-btn-arrow__icon">
+                            <use xlink:href="sprite.svg#arrow"></use>
+                          </svg>
+                    </button>
+                    <ul class="pagination"></ul>
+                    <button class="pagination-with-btn-arrow pagination-with-btn-arrow--right" type="button">
+                          <svg class="pagination-with-btn-arrow__icon">
+                            <use xlink:href="sprite.svg#arrow"></use>
+                          </svg>
+                    </button>
+                  </div>
             </div>
           </div>
         </section>
@@ -716,7 +861,8 @@
                   <svg class="footer-contact-adress__icon">
                     <use xlink:href="sprite.svg#pointer"></use>
                   </svg>
-              <p class="footer-contact__text">Киев, улица Евгения Маланюка 100а</p>
+              <p class="footer-contact__text footer-contact__text--pc">Киев, улица Евгения Маланюка 100а</p>
+              <p class="footer-contact__text footer-contact__text--mobile">Киев, ул. Е. Маланюка 100а</p>
             </div>
             <div class="footer-contact-phone">
                   <svg class="footer-contact-phone__icon">
@@ -758,7 +904,7 @@
                     </div>
                   </div>
                   <div class="my__btn footer-form__btn">
-                    <input type="submit" value="Получить код скидки на почту">
+                    <input type="submit" value="Получить материал">
                   </div>
             </form>
             <div class="footer-form-contact">
@@ -824,6 +970,9 @@
               </div>
               <div class="my__btn modal-body-form__btn">
                 <input type="submit" value="Свяжитесь со мной для консультации">
+              </div>
+              <div class="my__btn modal-body-form__btn modal-body-form__btn--sm">
+                <input type="submit" value="Свяжитесь со мной">
               </div>
         </form>
       </div>
