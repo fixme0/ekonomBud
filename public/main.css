@@ -1059,6 +1059,9 @@ button.swiper-pagination-bullet {
 .blue {
   color: #0041f1; }
 
+.opacity-0 {
+  opacity: 0; }
+
 .header {
   background-color: #fff; }
   .header-nav-button {
@@ -1308,9 +1311,15 @@ button.swiper-pagination-bullet {
   display: inline-block;
   background-image: -o-linear-gradient(8deg, #ffa600, #ffcc00);
   background-image: linear-gradient(82deg, #ffa600, #ffcc00);
-  -webkit-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition-property: background-position;
+  -o-transition-property: background-position;
+  transition-property: background-position;
+  -webkit-transition-duration: .4s;
+       -o-transition-duration: .4s;
+          transition-duration: .4s;
+  -webkit-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
   background-size: 300% 100%;
   font-family: "Exo2-ExtraBold";
   text-align: center;
@@ -1324,9 +1333,12 @@ button.swiper-pagination-bullet {
   .my__btn:hover {
     cursor: pointer;
     background-position: 100% 0;
-    -webkit-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out; }
+    -webkit-transition-property: background-position;
+    -o-transition-property: background-position;
+    transition-property: background-position;
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out; }
   .my__btn > *:first-child {
     padding: 22px 63px;
     background-color: transparent;
@@ -1341,7 +1353,8 @@ button.swiper-pagination-bullet {
     text-transform: inherit;
     font-family: inherit;
     letter-spacing: inherit;
-    width: 100%; }
+    width: 100%;
+    opacity: 1; }
     @media (max-width: 1280px) {
       .my__btn > *:first-child {
         padding: 17.6px 50.4px; } }
@@ -1397,6 +1410,9 @@ button.swiper-pagination-bullet {
       color: #0041f1; }
     .pagination-item + li {
       margin-left: 38px; }
+      @media (max-width: 768px) {
+        .pagination-item + li {
+          margin-left: 25px; } }
     .pagination-item__btn {
       font-size: 14px;
       color: #97a4c6;
@@ -1542,7 +1558,7 @@ button.swiper-pagination-bullet {
       @media (max-width: 768px) {
         .input-wrapper__field {
           font-size: 18px;
-          letter-spacing: -0.5em;
+          letter-spacing: -0.5px;
           line-height: 1.33;
           padding-bottom: 10px; } }
     .input-wrapper__icon {
@@ -3535,6 +3551,9 @@ button.swiper-pagination-bullet {
       position: absolute;
       bottom: 0;
       left: 0; }
+      @media (max-width: 992px) {
+        .sert-main-partOne__btn {
+          position: static; } }
       .sert-main-partOne__btn--sm {
         display: none; }
       @media (max-width: 1280px) {
@@ -3596,6 +3615,21 @@ button.swiper-pagination-bullet {
     -o-transition: transform .2s;
     transition: transform .2s;
     transition: transform .2s, -webkit-transform .2s; }
+    @media (max-width: 1280px) {
+      .sert-slider-item {
+        margin-right: 24px;
+        width: calc(93% - 30px * 0.8); } }
+    @media (max-width: 992px) {
+      .sert-slider-item {
+        margin-right: 15px;
+        width: calc(93% - 15px); } }
+    @media (max-width: 768px) {
+      .sert-slider-item {
+        margin-right: 0;
+        width: 90%;
+        -webkit-transform: scale(0.95);
+            -ms-transform: scale(0.95);
+                transform: scale(0.95); } }
     .sert-slider-item__img {
       display: block;
       max-width: 100%;
